@@ -1,0 +1,51 @@
+.card{
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+
+    background-color: #333;
+    padding: 1rem 1rem  0;
+}
+
+.card img{
+    width: 70%;
+    height: 70%;
+    object-fit: cover;
+
+    border-radius: 8px;
+}
+
+.card h3{
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.card p {
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+
+@media (max-width:768px) {
+    .card h3{
+        font-size: 1.5rem;
+     }
+     
+     .card p {
+        font-size: .82rem;
+     }
+}
+
+@media(max-width:425px){
+    .card h3{
+       font-size: 1.4rem;
+    }
+    
+    .card p {
+       font-size: .79rem;
+    }
+}

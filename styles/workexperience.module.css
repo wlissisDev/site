@@ -1,0 +1,100 @@
+.container {
+    height: 100vh;
+
+    overflow: hidden;
+
+    display: grid;
+    place-items: center;
+    justify-content: center;
+}
+
+.title {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    letter-spacing: 20px;
+    color: rgb(107 117 128 / 1);
+    margin-top: 6rem;
+}
+
+
+.list_experiences {
+    width: 900px;
+
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 93%;
+
+    overflow-x: auto;
+    /* para noa puchar a pagina pro lado quando acabar a rolagem */
+    overscroll-behavior-inline: contain;
+
+    -webkit-overflow-scrolling: touch;
+}
+
+.list_experiences::-webkit-scrollbar {
+    background-color: #fff;
+    height: 12px;
+    border-radius: 8px;
+}
+.list_experiences::-webkit-scrollbar-thumb {
+    width: 300px;
+    border-radius: 8px;
+    background-color: #f7ab0a;
+}
+
+#snap_inline {
+    scroll-snap-type: inline mandatory;
+    scroll-padding-inline: 1rem;
+}
+
+#snap_inline > * {
+    scroll-snap-align: start;
+}
+
+@media (max-width: 768px) {
+    .list_experiences {
+        width: 500px;
+        grid-auto-columns: 87%;
+    }
+
+    .list_experiences::-webkit-scrollbar {
+        background-color: #fff;
+        height: 4px;
+
+        border-radius: 8px;
+    }
+
+    .list_experiences::-webkit-scrollbar-thumb {
+        width: 200px;
+        border-radius: 8px;
+        background-color: #f7ab0a;
+    }
+
+    .title{
+        font-size: 1rem;
+    }
+}
+@media (max-width: 425px) {
+    .list_experiences {
+        width: 100%;
+        grid-auto-columns: 77%;
+    }
+
+    .list_experiences::-webkit-scrollbar {
+        background-color: #fff;
+        height: 4px;
+    }
+
+    .list_experiences::-webkit-scrollbar-thumb {
+        width: 100px;
+        border-radius: 8px;
+        background-color: #f7ab0a;
+    }
+
+
+    .title{
+        font-size: 1.2rem;
+    }
+}
+

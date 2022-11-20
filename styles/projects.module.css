@@ -1,0 +1,81 @@
+.container{
+    height: 100vh;
+    width: 100vw;
+
+    
+    display: grid;
+    place-items: center;
+}
+.title {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    letter-spacing: 20px;
+    color: rgb(107 117 128 / 1);
+    margin-top: 6rem;
+}
+
+.list_projects{
+    width: 800px;
+    height: auto;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 75%;
+    justify-items: center;
+    gap: 2rem;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+.list_projects::-webkit-scrollbar {
+    background-color: #fff;
+    height: 12px;
+    border-radius: 8px;
+}
+.list_projects::-webkit-scrollbar-thumb {
+    width: 300px;
+    border-radius: 8px;
+    background-color: #f7ab0a;
+}
+
+@media (max-width: 768px) {
+    .list_projects {
+        width: 500px;
+        grid-auto-columns: 87%;
+    }
+
+    .list_projects::-webkit-scrollbar {
+        background-color: #fff;
+        height: 4px;
+
+        border-radius: 8px;
+    }
+
+    .list_projects::-webkit-scrollbar-thumb {
+        width: 200px;
+        border-radius: 8px;
+        background-color: #f7ab0a;
+    }
+
+    .title{
+        font-size: 1rem;
+    }
+}
+@media (max-width: 425px) {
+    .list_projects {
+        width: 100%;
+        grid-auto-columns: 87%;
+    }
+
+    .list_projects::-webkit-scrollbar {
+        background-color: #fff;
+        height: 4px;
+    }
+
+    .list_projects::-webkit-scrollbar-thumb {
+        width: 100px;
+        border-radius: 8px;
+        background-color: #f7ab0a;
+    }
+
+}

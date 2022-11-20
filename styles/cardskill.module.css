@@ -1,0 +1,48 @@
+.card_skill{
+    width: 100px;
+    height: 100px;
+    border: 1px solid rgb(215, 112, 34);
+
+    border-radius: 50%;
+
+    padding: 10px;
+
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.card_skill img {
+    width: 80%;
+    height: 80%;
+
+    border-radius: 6px;
+}
+
+.card_percent{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 1px solid rgb(215, 112, 34);
+    background-color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    opacity: 0;
+
+    position: absolute;
+}
+
+.card_percent p{
+    color: black;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.card_percent:hover{
+    opacity: 1;
+}
